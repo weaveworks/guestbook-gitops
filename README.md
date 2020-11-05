@@ -15,7 +15,7 @@ These are the tools that you’ll be working with in order to create a basic Git
 | Git repo                  	| https://github.com/weavework/guestbook-gitops 	| A Git repository containing your application and cluster manifests files.                                                           	|
 | Continuous Integration    	| [GitHub Actions](https://github.com/features/actions)                        	| Test and integrate the code - can be anything from CircleCI to GitHub actions.                                                      	|
 | Continuous Delivery       	| [Flux version 2](https://toolkit.fluxcd.io/cmd/flux/)                                  	| Cluster <-> repo synchronization                                                                                                    	|
-| Container Registry        	| AWS [ECR Container Registry](https://aws.amazon.com/ecr/)            	| Can be any image registry or even a directory.                                                                                      	|
+| Container Registry        	| [AWS ECR Container Registry](https://aws.amazon.com/ecr/)            	| Can be any image registry or even a directory.                                                                                      	|
 | GitHub secrets management 	| ECR                                   	| Can use [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) or [Vault](https://www.vaultproject.io/).In this case we are using Elastic Container Registry (ECR) which provides resource level  security. 	|
 
 
@@ -189,7 +189,6 @@ Check the cluster for the flux-system namespace with:
 
 `kubectl get namespaces`
 
-
 ```
 NAME              STATUS   AGE
 default           Active   5h25m
@@ -214,9 +213,9 @@ flux create source git [guestbook-gitops] \
 ```
 Where, 
 
-`[guestbook]` is the name of your app or service
-`[cluster-name]` is the cluster name
-`[github-user-id/guestbook-gitops]` is the forked guestbook repository
+  * `[guestbook]` is the name of your app or service
+  * `[cluster-name]` is the cluster name
+  * `[github-user-id/guestbook-gitops]` is the forked guestbook repository
 
 Configure a Flux kustomization to apply to the `./deploy` directory from your new repo with: 
 ```
@@ -336,6 +335,7 @@ To delete the cluster, run:
 `eksctl delete cluster --name [name of your cluster]`
 
 ## Final Thoughts
+
 These two posts explain GitOps concepts and its origins. We then demonstrated how to pull together a GitOps pipeline for application deployments. This is one example of how to leverage GitOps.  To see even more use cases and examples of how you can leverage GitOps, see the [Flux version 2 docs](https://toolkit.fluxcd.io/get-started/#staging-workflow). 
  
 
