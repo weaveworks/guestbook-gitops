@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: php-redis
-        image: 457472006214.dkr.ecr.us-west-1.amazonaws.com/guestbook:23d38b9ffa3019fb4e1630af6041364ef52719aa
+        image: 592678693542.dkr.ecr.us-east-1.amazonaws.com/guestbook:0810e6afd521a4fdf73ddb49b4b60b75b486b794
         # update image value with the image URI of the container registry  
         resources:
           requests:
