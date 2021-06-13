@@ -1,4 +1,4 @@
-
+ 
 # Building a Continuous Deployment GitOps Pipeline to EKS
 
 This tutorial describes how to set up a basic GitOps deployment pipeline with Flux and GitHub actions. It uses the Kubernetes Guestbook application and also adapts a [GitHub Actions pipeline](https://github.com/github-developer/example-actions-flux-eks) originally developed by Jeremy Adams and John Bohannon of GitHub. 
