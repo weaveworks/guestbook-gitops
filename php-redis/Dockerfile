@@ -16,6 +16,7 @@ FROM php:5-apache
 
 RUN pear channel-discover pear.nrk.io
 RUN pear install nrk/Predis
+COPY guestbook.php /
 
 # If the container's stdio is connected to systemd-journald,
 # /proc/self/fd/{1,2} are Unix sockets and apache will not be able to open()
