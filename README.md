@@ -1,5 +1,5 @@
 # I will put anything below for testing
-Hello world! How are you?
+Hello world!
 
 # Building a Continuous Deployment GitOps Pipeline to EKS
 
