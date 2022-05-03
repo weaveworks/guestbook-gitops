@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/abhishekshukla247/guestbook-gitops/compare/v0.3.0...v0.3.1) (2022-05-03)
+
+
+### Bug Fixes
+
+* **deployment config:** Test feature release changelog ([0fea60a](https://github.com/abhishekshukla247/guestbook-gitops/commit/0fea60ae20911a6d0aa9ad172a4e719098c8f169))
+
+
+
 # [0.3.0](https://github.com/abhishekshukla247/guestbook-gitops/compare/v0.2.0...v0.3.0) (2022-05-03)
 
 
