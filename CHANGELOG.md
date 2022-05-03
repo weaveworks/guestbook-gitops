@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/abhishekshukla247/guestbook-gitops/compare/v0.2.0...v0.3.0) (2022-05-03)
+
+
+### Features
+
+* Test feature release changelog update ([3f48bc9](https://github.com/abhishekshukla247/guestbook-gitops/commit/3f48bc9e7663870ee2c37a64e7e3e1b47563fd83))
+
+
+
 # [0.2.0](https://github.com/abhishekshukla247/guestbook-gitops/compare/v0.1.1...v0.2.0) (2022-05-03)
 
 
